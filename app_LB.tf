@@ -1,7 +1,7 @@
 #load balancer
 
 resource "aws_lb" "external-alb" {
-  name               = "app-LB"
+  name               = "External-LB"
   internal           = false
   load_balancer_type = "application"
   security_groups    = [aws_security_group.web-sg.id]
