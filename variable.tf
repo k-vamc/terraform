@@ -41,11 +41,4 @@ variable "sub-5_cidr" {
 variable "sub-6_cidr" {
   default = "10.0.6.0/24"
 }
-#vpc
-resource "aws_vpc" "demo-vpc" {
-  cidr_block       = var.10.0.0.0/16
 
-  tags = {
-    Name = "demo-vpc"
-  }
-}
